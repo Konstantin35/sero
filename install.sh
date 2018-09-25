@@ -20,18 +20,19 @@ else
 fi
 
 cd "$git_path/go-czero-import/czero/lib"
-if [ -f "libczero.so" ];then
+if [ ! -L "libczero.so" ];then
 	ln -s "$root_path/lib/libczero.so" libczero.so
 fi
 
 cd $root_path
-if [ -d "/data/" ];then
+if [ ! -L "/data/" ];then
 	ln -s "src/github.com/sero-cash/go-czero-import/czero/data" data
 fi
 
-if [ -d "/bin/" ];then
+if [ ! -L "/bin/" ];then
 	ln -s "src/github.com/sero-cash/go-sero/build/bin" bin
 fi
 
 cd "$git_path/go-sero"
 make all
+
