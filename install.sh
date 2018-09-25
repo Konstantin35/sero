@@ -12,3 +12,4 @@ cd "$git_path/go-sero"
 make all
 cd "$root_path"
 ln -s "$git_path/go-sero/build/bin/gero" gero
+ln -s "$git_path/go-czero-import/czero/data" data
