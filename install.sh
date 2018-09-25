@@ -35,4 +35,3 @@ fi
 
 cd "$git_path/go-sero"
 make all
-
