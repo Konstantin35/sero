@@ -29,8 +29,8 @@ if [ !  -d "/data/" ];then
 	ln -s "src/github.com/sero-cash/go-czero-import/czero/data" data
 fi
 
-if [ !  -f "gero" ];then
-	ln -s "src/github.com/sero-cash/go-sero/build/bin/gero" gero
+if [ !  -d "/bin/" ];then
+	ln -s "src/github.com/sero-cash/go-sero/build/bin" bin
 fi
 
 cd "$git_path/go-sero"
