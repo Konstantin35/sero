@@ -26,6 +26,6 @@ do
        ;;
     esac
 done
-
+echo $params
 
 sh start.sh --dev --devpassword "123456"
