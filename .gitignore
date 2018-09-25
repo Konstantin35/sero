@@ -3,3 +3,5 @@ data
 gero
 nohup.out
 src/
+bin/
+config
