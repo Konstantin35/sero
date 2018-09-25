@@ -1,1 +1,1 @@
-./gero --datadir chain attach ipc:chain/gero.ipc
+bin/gero --datadir chain attach ipc:chain/gero.ipc
