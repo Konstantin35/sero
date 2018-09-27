@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sh update.sh
 sh stop.sh
+sh update.sh
 sh clean.sh
 
 if [ -n "$1" ]; then

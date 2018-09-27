@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sh update.sh
 sh stop.sh
+sh update.sh
 
 if [ -n "$1" ]; then
 	sh start.sh $1
