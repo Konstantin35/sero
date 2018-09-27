@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rm -rf chain/gero chain/gero.ipc chain/history chain/state1
+rm -rf chain_*/gero chain_*/gero.ipc chain_*/history chain_*/state1

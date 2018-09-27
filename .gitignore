@@ -1,7 +1,8 @@
-chain*/
+chain_*/
 data
 gero
 nohup.out
 src/
 bin/
 config
+log/
