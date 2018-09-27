@@ -3,6 +3,7 @@ data
 gero
 nohup.out
 src/
+bin
 bin/
 config
 log/
