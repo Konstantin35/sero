@@ -6,7 +6,7 @@ sh stop.sh
 
 total=0
 if [ -n "$1" ]; then
-    total=$(expr $i - 1)
+    total=$(expr $1 - 1)
 fi
 
 for i in $(seq 0 $total)  
