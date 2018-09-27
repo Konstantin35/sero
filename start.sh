@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 sh stop.sh
 
 total=0
