@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sh stop.sh
-
+sleep 1
 total=0
 if [ -n "$1" ]; then
     total=$(expr $1 - 1)
