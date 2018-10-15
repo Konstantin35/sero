@@ -1,4 +1,5 @@
 chain_*/
+*.log
 data
 gero
 nohup.out
