@@ -19,10 +19,11 @@ else
 	git fetch&&git rebase
 fi
 
-cd  "$git_path/go-czero-import/czero/lib"
+cd  "$root_path/lib"
 if [ ! -L "libczero.so" ];then
-	ln -s "$root_path/lib/libczero.so" libczero.so
+	ln -s "$git_path/go-czero-import/czero/lib/libczero.so" libczero.so
 fi
+
 cd $root_path
 if [ ! -L "data" ];then
 	ln -s "src/github.com/sero-cash/go-czero-import/czero/data" data
