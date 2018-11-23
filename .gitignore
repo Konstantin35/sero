@@ -9,3 +9,4 @@ bin/
 config
 log/
 bootnode.key
+lib
