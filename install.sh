@@ -1,6 +1,9 @@
 #!/bin/bash
 
 root_path="$PWD"
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:root_path/src/github.com/sero-cash/go-czero-import/czero/lib
+
 mkdir -p "src/github.com/sero-cash"
 git_path="$root_path/src/github.com/sero-cash"
 cd "$git_path"
@@ -35,3 +38,5 @@ fi
 
 cd "$git_path/go-sero"
 make all
+
+

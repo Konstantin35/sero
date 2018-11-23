@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sh stop.sh
+sh stop.sh "gero"
 sh update.sh
 
 if [ -n "$1" ]; then
