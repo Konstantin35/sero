@@ -1,1 +1,2 @@
-bin/gero --datadir chain_$1 attach ipc:chain_$1/gero.ipc
+export LD_LIBRARY_PATH=lib
+bin/gero --datadir data attach ipc:data/gero.ipc

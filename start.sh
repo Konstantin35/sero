@@ -1,12 +1,4 @@
 #!/bin/bash
 
-total=0
-if [ -n "$1" ]; then
-    total=$(expr $1 - 1)
-fi
-
-for i in $(seq 0 $total)  
-do   
-echo "start $i"  
-	nohup  bin/gero --datadir "chain_$i" --port $(expr $i + 30310) --alpha > log/$i.log &
-done
+export LD_LIBRARY_PATH=lib
+nohup  bin/gero --cache 4096 --trie-cache-gens 1200 --maxpeers 256 --datadir data  > log/$i.log &

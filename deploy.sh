@@ -2,4 +2,4 @@
 
 sh update.sh
 sh clean.sh
-sh restart.sh $1
+sh restart.sh
