@@ -1,2 +1,3 @@
 #!/bin/bash
-nohup bin/bootnode -nodekey=bootnode.key -verbosity=9 -addr :60609 -nat=any > bootnode.log &
+export LD_LIBRARY_PATH=lib
+nohup bin/bootnode -nodekey=bootnode.key -verbosity=9 -nat=any > bootnode.log &
