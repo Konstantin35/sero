@@ -10,3 +10,4 @@ config
 log/
 bootnode.key
 lib
+pkg
