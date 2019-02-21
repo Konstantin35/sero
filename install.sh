@@ -26,12 +26,12 @@ if [ ! -L "data" ];then
         ln -s "src/github.com/sero-cash/go-czero-import/czero/data" data
 fi
 
-if [ ! -L "bin" ];then
-        ln -s "src/github.com/sero-cash/go-sero/build/bin" bin
-fi
-
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:root_path/lib
 cd "$git_path/go-sero"
 make all
 
 cd $root_path
+if [ ! -d "bin" ];then
+	mkdir "bin"
+        ln -s "src/github.com/sero-cash/go-sero/build/bin/gero" "bin/"
+fi
