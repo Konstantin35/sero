@@ -33,5 +33,5 @@ make all
 cd $root_path
 if [ ! -d "bin" ];then
 	mkdir "bin"
-        ln -s "src/github.com/sero-cash/go-sero/build/bin/gero" "bin/"
+        ln -s "$git_path/go-sero/build/bin/gero" "bin/"
 fi
