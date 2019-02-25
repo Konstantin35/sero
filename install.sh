@@ -34,4 +34,5 @@ cd $root_path
 if [ ! -d "bin" ];then
 	mkdir "bin"
         ln -s "$git_path/go-sero/build/bin/gero" "bin/"
+	ln -s "$git_path/mine-pool/build/bin/mine-pool" "bin/"
 fi
