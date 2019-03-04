@@ -3,7 +3,7 @@
 root_path="$PWD"
 
 sh update.sh
-
+git_path="$root_path/src/github.com/sero-cash"
 function sysname() {
     SYSTEM=`uname -s |cut -f1 -d_`
     if [ "Darwin" == "$SYSTEM" ];then
