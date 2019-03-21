@@ -28,6 +28,7 @@ fi
 
 
 cd "$git_path/go-sero"
+export LD_LIBRARY_PATH=$root_path/lib
 make all
 
 function sysname() {
