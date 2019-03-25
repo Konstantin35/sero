@@ -2,7 +2,7 @@
 
 root_path="$PWD"
 
-sh update.sh
+bash update.sh
 git_path="$root_path/src/github.com/sero-cash"
 function sysname() {
     SYSTEM=`uname -s |cut -f1 -d_`
